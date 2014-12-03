@@ -7,7 +7,7 @@ import fr.orion78.graphicalProgramming.model.operators.BinaryOperator;
 public class Plus extends BinaryOperator {
 
 	@Override
-	public Object execute(Program p) throws ExecutionException {
+	public Object execute(Program p) {
 		// TODO Auto-generated method stub
 		return null;
 	}

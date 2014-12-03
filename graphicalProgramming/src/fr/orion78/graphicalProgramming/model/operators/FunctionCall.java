@@ -1,9 +1,10 @@
 package fr.orion78.graphicalProgramming.model.operators;
 
+import fr.orion78.graphicalProgramming.model.FunctionDef;
 import fr.orion78.graphicalProgramming.model.Instruction;
 import fr.orion78.graphicalProgramming.model.Program;
 import fr.orion78.graphicalProgramming.model.Type;
-import fr.orion78.graphicalProgramming.model.exceptions.ExecutionException;
+import fr.orion78.graphicalProgramming.model.exceptions.FuncNotFoundException;
 import fr.orion78.graphicalProgramming.model.exceptions.FunctionCallException;
 
 public class FunctionCall extends Instruction{
@@ -16,16 +17,20 @@ public class FunctionCall extends Instruction{
 	}
 
 	@Override
-	public Object execute(Program p) throws ExecutionException {
+	public Object execute(Program p)  {
 		if(functionName.equals("printf")){
-			printf(p);
+			return printf(p);
 		} else {
-			// TODO
+			FunctionDef func = p.getFuncByName(functionName);
+			if(func == null){
+				throw new FuncNotFoundException("No function named \"" + functionName + "\" found");
+			} else {
+				return func.execute(p);
+			}
 		}
-		return null;
 	}
 	
-	private Object printf(Program p) throws ExecutionException{
+	private Object printf(Program p) {
 		int max = args.length;
 		for(int i = 0; i < max; i++){
 			Object t = args[i];

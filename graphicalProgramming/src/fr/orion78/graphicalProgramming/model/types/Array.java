@@ -1,7 +1,11 @@
 package fr.orion78.graphicalProgramming.model.types;
 
+import java.util.List;
+
 import fr.orion78.graphicalProgramming.model.Type;
 
-public class Array extends Type{
-
+public class Array<T> extends Type{
+	public Array(List<T> array){
+		super(array);
+	}
 }

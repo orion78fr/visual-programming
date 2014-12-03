@@ -1,9 +1,9 @@
 package fr.orion78.graphicalProgramming.model.exceptions;
 
-public abstract class ExecutionException extends RuntimeException {
+public class DuplicateFuncNameException extends ExecutionException {
 	private static final long serialVersionUID = 1L;
 
-	public ExecutionException(String str){
+	public DuplicateFuncNameException(String str) {
 		super(str);
 	}
 }

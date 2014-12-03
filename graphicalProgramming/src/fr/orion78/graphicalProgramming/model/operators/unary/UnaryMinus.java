@@ -7,7 +7,7 @@ import fr.orion78.graphicalProgramming.model.operators.UnaryOperator;
 public class UnaryMinus extends UnaryOperator{
 
 	@Override
-	public Object execute(Program p) throws ExecutionException {
+	public Object execute(Program p)  {
 		// TODO Auto-generated method stub
 		return null;
 	}

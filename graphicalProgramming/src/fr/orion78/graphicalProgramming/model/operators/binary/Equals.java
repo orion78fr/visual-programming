@@ -1,10 +1,10 @@
-package fr.orion78.graphicalProgramming.model.operators.unary;
+package fr.orion78.graphicalProgramming.model.operators.binary;
 
 import fr.orion78.graphicalProgramming.model.Program;
 import fr.orion78.graphicalProgramming.model.exceptions.ExecutionException;
-import fr.orion78.graphicalProgramming.model.operators.UnaryOperator;
+import fr.orion78.graphicalProgramming.model.operators.BinaryOperator;
 
-public class Cast extends UnaryOperator{
+public class Equals extends BinaryOperator{
 
 	@Override
 	public Object execute(Program p) {

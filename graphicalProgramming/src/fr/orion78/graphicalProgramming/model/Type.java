@@ -10,4 +10,18 @@ public abstract class Type {
 	public void setValue(Object value) {
 		this.value = value;
 	}
+	
+	protected Type(Object value){
+		this.value = value;
+	}
+	
+	@Override
+	public boolean equals(Object arg) {
+		if(arg instanceof Type){
+			return this.value.equals(((Type) arg).getValue());
+		} else {
+			return false;
+		}
+	}
+	
 }

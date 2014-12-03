@@ -1,9 +1,9 @@
 package fr.orion78.graphicalProgramming.model.exceptions;
 
-public abstract class ExecutionException extends RuntimeException {
+public class NullInstructionException extends ExecutionException {
 	private static final long serialVersionUID = 1L;
 
-	public ExecutionException(String str){
+	public NullInstructionException(String str) {
 		super(str);
 	}
 }
