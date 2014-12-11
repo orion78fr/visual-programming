@@ -6,7 +6,7 @@ import fr.orion78.graphicalProgramming.model.types.Boolean;
 public abstract class Branch extends Instruction {
 	private Instruction condition;
 	
-	public Branch(Instruction condition){
+	protected Branch(Instruction condition){
 		if(condition == null){
 			throw new NullBranchConditionException("A branch have a null instruction as branching condition");
 		}

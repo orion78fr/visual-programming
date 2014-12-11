@@ -1,10 +1,15 @@
 package fr.orion78.graphicalProgramming.model.operators.binary;
 
 import fr.orion78.graphicalProgramming.model.Program;
-import fr.orion78.graphicalProgramming.model.exceptions.ExecutionException;
+import fr.orion78.graphicalProgramming.model.Type;
 import fr.orion78.graphicalProgramming.model.operators.BinaryOperator;
 
 public class Plus extends BinaryOperator {
+
+	protected Plus(Type left, Type right) {
+		super(left, right);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public Object execute(Program p) {

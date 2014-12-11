@@ -18,7 +18,7 @@ public class MainTest {
 		
 		List<Instruction> ops = new ArrayList<Instruction>();
 		ops.add(printf);
-		
+	
 		FunctionDef main = new FunctionDef("main", ops);
 		
 		List<FunctionDef> funcs = new ArrayList<FunctionDef>();

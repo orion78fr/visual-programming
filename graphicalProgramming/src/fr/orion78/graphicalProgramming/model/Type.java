@@ -6,10 +6,6 @@ public abstract class Type {
 	public Object getValue() {
 		return value;
 	}
-
-	public void setValue(Object value) {
-		this.value = value;
-	}
 	
 	protected Type(Object value){
 		this.value = value;
