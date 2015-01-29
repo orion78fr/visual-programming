@@ -7,4 +7,4 @@
 	classes d'implémentation en package-private
 [0%] Utiliser des enums pour les constantes
 [50%] Ajouter la classe de gestion des singletons favoris avec l'annotation
-
+[0%] Passer à jGraphx pour la partie visuelle
