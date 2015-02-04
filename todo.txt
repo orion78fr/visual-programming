@@ -1,0 +1,10 @@
+[0%] Ajouter le zoom dans l'interface
+[0%] Permettre de créer les liens dans l'interface
+[0%] Créer les classes correspondant au modèle dans l'interface
+[0%] Implémenter le code des opérations
+[0%] Gérer les références et les scope des variables
+[0%] Créer des factory et des interfaces public et passer les 
+	classes d'implémentation en package-private
+[0%] Utiliser des enums pour les constantes
+[50%] Ajouter la classe de gestion des singletons favoris avec l'annotation
+[0%] Passer à jGraphx pour la partie visuelle
